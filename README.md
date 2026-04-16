@@ -15,3 +15,6 @@ se agrego el archivo ec2.tf #v0.4
 
 
 se modifica ID de ami ubuntu en ec2.tf #v0.5
+
+
+se modifica CIDR de la regla de entrada del grupo de seguridad para EC2 #0.6
