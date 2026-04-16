@@ -12,3 +12,6 @@ se agrego el archivo vpc.tf #v0.3
 
 
 se agrego el archivo ec2.tf #v0.4
+
+
+se modifica ID de ami ubuntu en ec2.tf #v0.5
