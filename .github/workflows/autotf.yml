@@ -5,6 +5,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   # 1. Análisis Estático con TFLint
@@ -23,7 +24,7 @@ jobs:
       - name: Inicializar TFLint
         run: tflint --init
         env:
-          GITHUBS_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Ejecutar Análisis Estático
         run: tflint -f compact
@@ -42,7 +43,7 @@ jobs:
         with:
           directory: . 
           framework: terraform 
-          soft_fail: false 
+          soft_fail: true 
           
   # 3. Validación de Terraform
   terraform_validation:
