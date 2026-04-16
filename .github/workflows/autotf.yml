@@ -2,9 +2,9 @@ name: Terraform
 
 # Se activa únicamente ante un Pull Request dirigido a la rama 'main'
 on:
-  push:
+  pull_request:
     branches:
-      - leosepulveda
+      - main
   workflow_dispatch:
 
 jobs:
