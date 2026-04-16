@@ -30,7 +30,7 @@ resource "aws_security_group" "ssh_access" {
 }
 
 resource "aws_instance" "mi_ec2" {
-  ami                         = "ami-012967cc5a8c9f891"
+  ami                         = "ami-0ec10929233384c7f"
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.mi_key.key_name
   subnet_id                   = aws_subnet.subnet_publica_1.id
