@@ -25,7 +25,7 @@ resource "aws_security_group" "ssh_access" {
   }
 
   tags = {
-    Name = "ssh-access"
+    Name = "AUY1105-EV1-sg-ec2"
   }
 }
 
@@ -38,6 +38,6 @@ resource "aws_instance" "mi_ec2" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "MiInstancia"
+    Name = "AUY1105-EV1-ec2"
   }
 }
