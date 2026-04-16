@@ -18,3 +18,6 @@ se modifica ID de ami ubuntu en ec2.tf #v0.5
 
 
 se modifica CIDR de la regla de entrada del grupo de seguridad para EC2 #0.6
+
+
+se agrega workflow para actions #v0.7
